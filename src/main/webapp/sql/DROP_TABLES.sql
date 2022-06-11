@@ -1,0 +1,4 @@
+--TODO --> SCRIPT PARA BORRAR TODAS LAS TABLAS
+DROP TABLE respuesta;
+DROP TABLE concepto;
+DROP TABLE pregunta;

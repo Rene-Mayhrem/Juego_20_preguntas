@@ -1,0 +1,450 @@
+/* ************************************************************** */
+/* GENERAL * /
+
+/* ************************************************************** */
+/* HOME.HTML */
+#bg-body {
+    background-image: url(../img/bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 845px;
+}
+
+#frm-login {
+    position: absolute;
+    width: 25rem;
+    height: 20rem;
+    border: none;
+    background: #1F618D;
+    border-radius: 2rem;
+    color: whitesmoke;
+    text-align: center;
+    margin-left: 45rem;
+    margin-top: 20rem;
+}
+
+#frm-login div {
+    position: sticky;
+    margin-top:3rem;
+}
+
+#frm-login label {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+#frm-login input {
+    margin-top: 2rem;
+    width: 80%;
+    border: 1px solid whitesmoke;
+    background: none;
+    color: whitesmoke;
+    height: 40px;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 16px;
+}
+
+#frm-login button {
+    margin-top: 2rem;
+    background: #FFC300;
+    color: black;
+    font-weight: 500;
+    font-size: 25px;
+    height: 40px;
+    width: 80%;
+    border: none;
+    border-radius: 2rem;
+}
+
+#frm-login button:hover {
+    background: #3B9602;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+#btn-admin {
+    position: sticky;
+    margin-top: 58%;
+    margin-left: 90%;
+}
+
+
+/* ************************************************************** */
+/* JUEGO.JSP */
+.header {
+    position: absolute;
+    width: 98%;
+    height: 5rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    left: 1rem;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.header h1 {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.header button {
+    position: inherit;
+    margin-top: 1rem;
+    width: 10%;
+    height: 2.5rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    box-shadow: 5px 5px 2px #aaaaaa;
+    color: white;
+    font-size: 14px;
+}
+
+.header a {
+	position: inherit;
+    margin-top: 1rem;
+    width: 10%;
+    height: 2.5rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    box-shadow: 5px 5px 2px #aaaaaa;
+    color: white;
+    font-size: 14px;
+    border-bottom: none;
+    text-align: center;
+}
+
+.header a:hover {
+	color: white;
+	border-bottom: none;
+}
+
+#btn-respuesta {
+    margin-left: 73%;
+    background: #1F618D;
+}
+
+#btn-cancelar {
+    margin-left: 87%;
+    background: #C70039;
+}
+
+.content {
+    position: absolute;
+    width: 98%;
+    height:95%;
+    margin-top: 9rem;
+    border-radius: 2rem;
+    left: 1rem;
+}
+
+.modal-content {
+    margin-top: 50%;
+}
+
+.modal-body form {
+    margin-left: 0rem;
+    text-align: center;
+}
+
+.modal-body form input[type="text"] {
+    width: 50%;
+}
+
+#inpt-respuesta {
+    width: 50%;
+}
+
+.modal-body form input[type="submit"] {
+    width: 90px;
+}
+
+/* ************************************************************** */
+/* ADMINISTRADOR.JSP */
+
+#btn-crear-concepto {
+    margin-left: 73%;
+    background: #1F618D;
+}
+
+#btn-crear-pregunta {
+    margin-left: 87%;
+    background: #C70039;
+}
+
+.div-tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+/*
+.div-tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.div-tab a {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.div-tab a:hover {
+    background-color: #ddd;
+}
+
+.div-tab a.active {
+    background-color: #ccc;
+}
+
+.div-tab button:hover {
+    background-color: #ddd;
+}
+
+.div-tab button.active {
+    background-color: #ccc;
+}
+*/
+.tablink {
+	background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tablink:hover {
+	background-color: #ddd;
+}
+
+.tablink.active {
+	background-color: #ccc;
+}
+
+.div-tab a {
+	border: none;
+	color:black;	
+}
+
+.diva-tab a:hover {
+	border: none;
+	color:black;
+}
+
+.tab-content {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+
+#form-concepto {
+    background-color: #ffffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
+.tab {
+    display: none;
+}
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.step.finish {
+    background-color: #04AA6D;
+}
+
+.data-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 0.5px solid black;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    height: 98%;
+    text-align: center;
+    margin-top:2rem;
+}
+
+.data-table th, td {
+    text-align: center;
+    padding: 16px;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.data-table #btn-eliminar {
+    background: #C70039;
+    border: 1px solid #C70039;
+    color: #f1f1f1;
+}
+
+.data-table #btn-eliminar:hover {
+    background: #62011c;
+    border: 1px solid #62011c;
+}
+
+.data-table #btn-modificar:hover {
+    background: #011b62;
+}
+
+.tab-content {
+    text-align: center;
+}
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-left: 30rem;
+}
+
+.form-inline label {
+    margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 500px;
+}
+
+.form-inline button {
+    padding: 10px 20px;
+    background-color: rgb(12, 124, 0);
+    border: 1px solid #ddd;
+    color: white;
+}
+
+.form-inline button:hover {
+    background-color: rgb(28, 104, 0);
+}
+
+@media (max-width: 800px) {
+    .form-inline input {
+        margin: 10px 0;
+    }
+
+    .form-inline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                GANADOR Y PERDEDOR
+*/
+#bg-perdedor {
+    background-image: url(../img/bg_mensaje_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 820px;
+    text-align: center;
+}
+
+#bg-ganador {
+    background-image: url(../img/bg-mensaje_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 820px;
+    text-align: center;
+}
+
+.msg-div {
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    background: rgba(59, 59, 59, 0.775);
+    border-radius: 2rem;
+    margin-top: 15%;
+    margin-left: 35%;
+    color: white;
+}
+
+.msg-content {
+    margin-top: 4rem;
+}
+
+.msg-content h1 {
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 4.5rem;
+}
+
+#btn-jugar {
+    margin-top: 2rem;
+    width: 70%;
+    background: #FFC300;
+    color: black;
+    font-size: 20px;
+    font-weight: 350;
+    border: none;
+    margin-bottom: 4.5rem;
+}
+
+#btn-jugar:hover {
+    background: #b88d00;
+    color: black;
+}
+
+.a-return {
+    margin-top: 5rem;
+    margin-left: 65%;
+    color: whitesmoke;
+    background: none;
+}
+
+.a-return:hover {
+    border-bottom: 1px solid whitesmoke;
+    color: white;
+}
